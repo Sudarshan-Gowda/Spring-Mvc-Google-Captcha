@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Spring Security</title>
+
+</head>
+<body>
+
+	<div id="fullpage">
+		<div class="header">
+			<div th:substituteBy="components/login-header" th:remove="tag"></div>
+		</div>
+		<!--header-->
+		<div class="body-cont">
+			<div>
+				<h4>You are Successfully Logged In</h4>
+			</div>
+
+			<div>
+				<span> Click here to <a th:href="@{/}">Logout</a>
+				</span>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="col-lg-12 col-sm-12 col-xs-12 copyrights-login">
+		<div th:substituteBy="components/login-footer" th:remove="tag"></div>
+	</div>
+</body>
+</html>

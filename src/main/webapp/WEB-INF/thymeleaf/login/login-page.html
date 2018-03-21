@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Google Captcha</title>
+<link rel="shortcut icon"
+	th:href="@{/resources/images/sudarshan-logo.png}" />
+<!-- added script for google capth api -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+
+	<div id="fullpage">
+		<div class="header">
+			<div th:substituteBy="components/login-header" th:remove="tag"></div>
+		</div>
+		<!--header-->
+		<div class="container">
+			<div class="col-md-4 col-sm-6 col-xs-9 loginform">
+				<div class="panel">
+					<div class="panel-heading">
+						<div class="panel-title">Sign In</div>
+					</div>
+
+					<div style="padding-top: 20px" class="panel-body">
+						<div class="container-fluid l2l" th:remove="tag">
+							<div th:substituteBy="message/server-message" th:remove="tag"></div>
+						</div>
+						<form method="post" class="form-horizontal"
+							th:object="${loginForm}">
+
+							<div style="margin-bottom: 25px" class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user"></i></span>
+								<input type="text" class="form-control" id="userName"
+									name="userName" placeholder="User Name"></input>
+							</div>
+
+							<div style="margin-bottom: 25px" class="input-group">
+								<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+								<input type="password" class="form-control" id="password"
+									name="password" placeholder="Password"></input>
+							</div>
+
+							<!-- added code for google captcha -->
+							<div class="g-recaptcha input-group" data-sitekey="GIVE-GOOGLE-API-KEY"></div>
+
+							<div style="margin-top: 20px" class="form-group">
+								<div class="col-sm-12 controls">
+									<button type="submit" class="btn btn-success star-link">Login</button>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<marquee onmouseover="this.stop()" onmouseout="this.start()"
+			scrolldelay="25">
+			Enter User Name as <b>admin</b> and Password as <b>test</b>
+		</marquee>
+	</div>
+
+	<div class="col-lg-12 col-sm-12 col-xs-12 copyrights-login">
+		<div th:substituteBy="components/login-footer" th:remove="tag"></div>
+	</div>
+</body>
+</html>

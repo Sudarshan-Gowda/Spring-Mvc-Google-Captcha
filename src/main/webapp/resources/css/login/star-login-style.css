@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #D7E1E8;
+	background: url(../../images/pattern.png);
+	font-size: 12px;
+	margin-right: 0px !important;
+}
+
+#fullpage {
+	width: 100%;
+	height: auto;
+}
+
+.header {
+	width: 100%;
+	height: auto;
+	/* background-color: #ddd; */
+	background-color: rgba(51, 51, 51, 0.6);
+}
+
+.copyrights {
+	margin-top: 143px;
+	width: 100%;
+	height: auto;
+	background-color: #ccc;
+	padding: 10px;
+}
+
+.modal-header {
+	background-color: #0081c1;
+	color: #fff;
+}
+
+.gmail-link {
+	margin-top: 50px;
+	margin-left: 370px;
+}
+
+.gmail-header {
+	margin-top: 150px;
+	font-size: 17px;
+	color: blue;
+}
+
+.gmail-data {
+	margin-top: 50px;
+	font-size: 18px;
+	margin-left: 450px;
+}
+
+.star-back-btn {
+	font-size: 15px;
+	margin-left: 750px;
+	margin-top: 30px;
+}
+
+.copyrights-login {
+	margin-top: 528px;
+	width: 100%;
+	height: auto;
+	background-color: #ccc;
+	padding: 10px;
+}
+
+.panel>.panel-heading {
+	color: #FFF;
+	background-color: darkgrey;
+}
+
+.panel>.panel-heading>.panel-title {
+	padding: 10px;
+}
+
+.panel {
+	border: 1px #0099FF solid;
+}
+
+.loginform {
+	height: auto;
+	position: fixed;
+	right: 350px;
+	z-index: 999;
+	padding: 40px;
+}
+
+.body-cont {
+	padding: 251px;
+}

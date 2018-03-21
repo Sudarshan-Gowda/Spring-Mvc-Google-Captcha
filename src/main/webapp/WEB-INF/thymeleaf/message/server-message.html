@@ -1,0 +1,11 @@
+<!-- <div class="pull-right col-md-4 alert-message" style="bottom: 10px;"> -->
+<div class="pull-right col-md-4 alert-message"
+	style="position: absolute; z-index: 999; top: 75px; right: 0px;">
+	<div class="alert"
+		th:classappend="${'btn-' + scrnMsg.type.friendlyType}"
+		th:each="scrnMsg : ${l2lMessage}">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close"
+			style="opacity: 1; margin-top: -19px; margin-right: -14px;">&times;</a>
+		<span th:text="${scrnMsg.message}"></span>
+	</div>
+</div>
